@@ -1,7 +1,7 @@
 
 package ejercicios;
 
-import static ejercicios.SetDeTenis.evaluar;
+import static ejercicios.Edad.evaluar;
 import java.util.Scanner;
 
 /**
@@ -10,7 +10,21 @@ import java.util.Scanner;
  */
 public class Edad {
     public static String evaluar(int dia, int mes, int anno) {
-        // TODO: Coloca aquí el código del ejercicio 6: Edad
+        
+        java.util.Calendar fechaActual = java.util.Calendar.getInstance();
+    int annoActual = fechaActual.get(java.util.Calendar.YEAR);
+    int mesActual = fechaActual.get(java.util.Calendar.MONTH) + 1; 
+    int diaActual = fechaActual.get(java.util.Calendar.DAY_OF_MONTH);
+
+    
+    int edad = annoActual - anno;
+
+    
+    if (mesActual < mes || (mesActual == mes && diaActual < dia)) {
+        edad--;
+    }
+
+    
         return "";
     }
     

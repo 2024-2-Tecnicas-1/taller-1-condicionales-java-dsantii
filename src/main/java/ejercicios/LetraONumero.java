@@ -1,7 +1,7 @@
 
 package ejercicios;
 
-import static ejercicios.SetDeTenis.evaluar;
+import static ejercicios.LetraONumero.evaluar;
 import java.util.Scanner;
 
 /**

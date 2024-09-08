@@ -1,7 +1,7 @@
 
 package ejercicios;
 
-import static ejercicios.SetDeTenis.evaluar;
+import static ejercicios.Division.evaluar;
 import java.util.Scanner;
 
 /**
@@ -11,13 +11,28 @@ import java.util.Scanner;
 public class Division {
     public static String evaluar(int dividendo, int divisor) {
         // TODO: Coloca aquí el código del ejercicio 3: Division
+        
         int cociente = 0;
         int residuo = 0;
-        String respuesta = "La división es exacta. \n"
+        
+        if (divisor != 0) { 
+        cociente = dividendo / divisor;
+        residuo = dividendo % divisor;
+        }
+        
+        
+        String respuesta;
+    if (residuo == 0) {
+        respuesta = "La división es exacta. \n"
                 + "Cociente: " + cociente + "\n"
                 + "Residuo: " + residuo;
-        return respuesta;
+    } else {
+        respuesta = "La división no es exacta. \n"
+                + "Cociente: " + cociente + "\n"
+                + "Residuo: " + residuo;
     }
+    return respuesta;
+}
     
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
