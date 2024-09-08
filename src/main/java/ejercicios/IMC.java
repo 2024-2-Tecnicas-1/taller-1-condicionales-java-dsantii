@@ -8,6 +8,7 @@ import java.util.Scanner;
  *
  * @author danielsanchez
  */
+
 public class IMC {
     public static String evaluar(int peso, double estatura, int edad) {
         // TODO: Coloca aquí el código del ejercicio 8: Índice de masa corporal

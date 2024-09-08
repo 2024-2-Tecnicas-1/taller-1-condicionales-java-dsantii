@@ -14,6 +14,7 @@ public class Ordenamiento {
         return "";
     }
     
+    
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
         System.out.print("Número 1:");

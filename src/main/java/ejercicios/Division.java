@@ -22,6 +22,7 @@ public class Division {
         
         
         String respuesta;
+        
     if (residuo == 0) {
         respuesta = "La división es exacta. \n"
                 + "Cociente: " + cociente + "\n"

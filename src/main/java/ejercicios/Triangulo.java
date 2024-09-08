@@ -21,6 +21,7 @@ public class Triangulo {
                 return "El triángulo es escaleno";
             }
         } else {
+            
             // Si no cumple la desigualdad triangular, no es un triángulo
             return "No es un triángulo válido";
         }
