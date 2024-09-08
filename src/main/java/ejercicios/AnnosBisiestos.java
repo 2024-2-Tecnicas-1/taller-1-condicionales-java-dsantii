@@ -11,22 +11,19 @@ import java.util.Scanner;
 
 public class AnnosBisiestos {
     public static String evaluar(int anno){
-        // TODO: Coloca aquí el código del ejercicio 2: Años bisiestos
-        if (anno % 400 == 0) {
-            if (anno % 100 == 0) {
-                if (anno % 4 == 0) {
-                    return "bisiesto";
-                } else {
-                    return "no es bisiesto";
-                }
-            } else {
-                return "bisiesto";
-            }
-        } else {
-            return "no es bisiesto";
+         // TODO: Coloca aquí el código del ejercicio 2: Años bisiestos
+        if (anno % 400 == 0){
+        return anno + " es bisiesto";
         }
-    
+        if (anno % 100 == 0){
+        return anno + " no es bisiesto";
+        }
+        if (anno % 4 == 0){
+        return anno + " es bisiesto";    
+        }
+        return anno + " no es bisiesto";
     }
+
     
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
